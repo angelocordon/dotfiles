@@ -1,0 +1,33 @@
+# ZSH
+alias rs="exec zsh"
+alias zshconfig="vi ~/.zshrc"
+alias zaconfig="vi ~/.zsh_aliases"
+alias ohmyzsh="vi ~/.oh-my-zsh"
+alias viconfig="vi ~/.vimrc"
+
+if type nvim > /dev/null 2>&1; then
+  alias vi='nvim'
+fi
+
+alias dev="cd ~/Development"
+
+# Git Commands
+alias gv='git pull origin $(git_current_branch)'
+alias g^="git push -u origin HEAD"
+alias gm='git checkout $(git_main_branch)'
+alias gcm="git commit -m"
+alias gri="git rebase --autostash -i"
+alias gacn="git commit -v -a --no-edit --amend"
+alias gl="git log"
+alias grm='git pull --rebase origin $(git_main_branch)'
+alias gap='git add --patch'
+alias gcw="git commit -m 'WIP $1'"
+alias gcd="git clean -df"
+
+# Docker Commands
+alias dc="docker-compose"
+alias ld="lazydocker"
+alias dcps="dc ps"
+alias dcp="docker container prune"
+alias dcd="docker-compose down"
+alias dcr="docker-compose restart"
