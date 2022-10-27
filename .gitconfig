@@ -1,5 +1,8 @@
 # This is Git's per-user configuration file.
-
+[core]
+	pager = delta
+[delta]
+	side-by-side = true
 [pager]
 	branch = false
 [init]
@@ -9,3 +12,6 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[user]
+	name = Angelo Cordon
+	email = angelocordon@gmail.com
