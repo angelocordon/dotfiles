@@ -333,12 +333,19 @@
   # typeset -g POWERLEVEL9K_DIR_PREFIX='%fin '
 
   #####################################[ vcs: git status ]######################################
+
+  typeset -g POWERLEVEL9K_VCS_GIT_ICON=
+  typeset -g POWERLEVEL9K_VCS_GIT_GITHUB_ICON=
+  typeset -g POWERLEVEL9K_VCS_GIT_BITBUCKET_ICON=
+  typeset -g POWERLEVEL9K_VCS_GIT_GITLAB_ICON=
+  
   # Branch icon. Set this parameter to '\uF126 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
 
   # Untracked files icon. It's really a question mark, your font isn't broken.
   # Change the value of this parameter to show a different icon.
   typeset -g POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
+  
 
   # Formatter for Git status.
   #
